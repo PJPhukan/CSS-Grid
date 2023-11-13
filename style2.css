@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: aqua;
+    background-color: #8529ef;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+
+
+/* Another way to create templates */
+.container {
+    border: 2px solid green;
+  
+
+    /*Initialize the contaier as grid */
+    display: grid;
+    /* It devide into four row and three column  */
+    grid-template-areas: "nav nav nav"
+        "side article article"
+        "right right left"
+        "footer footer footer";
+
+}
+
+.item {
+    border: 2px solid rgb(0, 0, 0);
+    height: 90px;
+}
+
+.item-1 {
+    grid-area: nav;
+    background-color: green;
+}
+
+.item-2 {
+    grid-area: side;
+    background-color: rgb(4, 34, 4);
+}
+
+.item-3 {
+    grid-area: article;
+    background-color: rgb(241, 140, 7);
+}
+
+.item-4 {
+    grid-area: left;
+    background-color: rgb(241, 7, 7);
+}
+
+.item-5 {
+    grid-area: right;
+    background-color: rgb(23, 7, 241);
+}
+
+.item-6 {
+    grid-area: footer;
+    background-color: rgb(241, 7, 151);
+}
